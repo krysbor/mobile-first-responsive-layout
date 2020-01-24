@@ -1,3 +1,11 @@
+.bottom-nav {
+    display: none;
+    background-color: rgb(247, 247, 247);
+}
+main {
+    background-color: rgb(247, 247, 247);
+}
+
 body {
     color: rgb(73, 73, 73);
     margin: 0;
@@ -105,6 +113,8 @@ h3 {
     padding-bottom: 3em;
     padding-top: 1em;
     margin: 0;
+    width: 90%;
+    margin: auto;
 }
 
 .contact-description {
@@ -137,6 +147,7 @@ footer {
     background-color: rgb(247, 247, 247);
     border-top: 1px solid gray;
     padding-top: 1em;
+    padding-bottom: 3rem;
 }
 
 .student-name,
@@ -172,7 +183,190 @@ footer::after {
 
 
 @media (min-width: 768px) {
-    header {
-        background-color: black;
+
+    .main-section {
+        background-color: white;
     }
+
+    .nav li {
+        width: 20%;
+        display: inline-block;
+        height: 3em;
+        /* padding-top: 0.8em;
+        padding-bottom: 0.8em; */
+        list-style-type: none;
+        font-family: Lato, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0.3em;
+        background-color: rgb(247, 247, 247);
+        text-align: center;
+    }
+
+    ul {
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+        margin: auto;
+    }
+
+    a {
+        box-sizing: border-box;
+        text-decoration: none;
+        color: inherit;
+        padding-top: 0.84em;
+        width: initial;
+        height: initial;
+    }
+
+    .profile-image {
+        float: right;
+        box-sizing: border-box;
+        width: 40%;
+        padding-left: 0;
+        padding-right: 2rem;
+        padding-top: 4rem;
+
+    }
+
+    .profile-description {
+        float: right;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        text-align: left;
+        width: 60%;
+        padding-top: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    header::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .main-section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .profile-image::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+     /* .contact-wrapper::before {
+        content: "";
+        display: table;
+        clear: both;
+    } */
+
+    .col {
+        float: left;
+        box-sizing: border-box;
+        width: 49.9%;
+    }
+
+    .bottom-nav {
+        display: block;
+        float: right;
+        list-style-type: none;
+        padding-top: 0.2em;
+        width: 40%;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .bottom-nav li {
+        float: right;
+        padding-top: 0;
+        text-transform: uppercase;
+        padding-right: 1.4em;
+        font-weight: bold;
+    }
+
+    .bottom-nav a {
+        padding-top: 0;
+    }
+
+
+    .contact-wrapper {
+        clear: both;
+    }
+
+    .contact-wrapper div {
+        margin: auto;
+        width: 70%;
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .col {
+        float: left;
+        box-sizing: border-box;
+        width: 33.3%;
+    }
+
+    .contact-wrapper div {
+        margin: auto;
+        width: 70%;
+        max-width: 700px;
+    }
+
+    .nav {
+        float: right;
+        width: 60%;
+        text-align: right;
+    }
+
+    .nav li {
+        width: 25%;
+        max-width: 400px;
+    }
+
+
+
+    h1 {
+        float: left;
+        width: 40%;
+    }
+
+    .nav-top::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    header {
+        padding-bottom: 3rem;
+    }
+
+    .main-section {
+        width: 95%;
+        background-color: white;
+        margin: auto;
+    }
+
+
+
+    .main-section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
 }
