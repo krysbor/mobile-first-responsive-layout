@@ -318,6 +318,9 @@ footer::after {
         float: left;
         box-sizing: border-box;
         width: 33.3%;
+        padding-right: 10px;
+        padding-left: 10px;
+
     }
 
     .contact-wrapper div {
